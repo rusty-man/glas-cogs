@@ -435,7 +435,7 @@ class PfpImgen(commands.Cog):
     @commands.bot_has_permissions(attach_files=True)
     @commands.cooldown(1, 10, commands.BucketType.user)
     @commands.command(cooldown_after_parsing=True)
-    async def banner(self, ctx, *, member: FuzzyMember = None):
+    async def thebanner(self, ctx, *, member: FuzzyMember = None):
         """To war we go!"""
         if not member:
             member = ctx.author
